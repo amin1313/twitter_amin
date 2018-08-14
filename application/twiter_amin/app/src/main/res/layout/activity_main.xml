@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/background">
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="twiiter"
+            android:textSize="16sp"
+            android:textColor="@color/background"
+            android:id="@+id/txt_toolbar"/>
+    </Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="twitter_amin"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:id="@+id/txtv_twitter_amin"
+        android:textColor="@color/colorPrimary"
+        />
+    <TextView
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/txtv"
+        android:textColor="#FFF"/>
+
+    <EditText
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/btn_color_login"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_username_MainActivity"
+        android:hint="UserName"/>
+
+    <EditText
+        android:password="true"
+        android:id="@+id/et_password_MainActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:hint="password"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/btn_color_login" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sign up"
+        android:id="@+id/btn_signup_MainActivity"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/select_btn_login_signup"
+        android:onClick="on_signup"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:id="@+id/btn_login_MainActivity"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/select_btn_login_signup"
+        android:textColor="@color/colorPrimary"
+        android:onClick="on_login"
+        tools:ignore="OnClick" />
+
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".post_show_list"
+    android:orientation="vertical"
+    android:background="@color/background">
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/colorPrimary">
+
+        <Button
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/ic_menu_add"
+            android:onClick="on_add"
+            tools:ignore="OnClick" />
+    </Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_activty_post_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>

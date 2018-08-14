@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackgroundBorderless">
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtv_author_item_post"
+        android:text="TEST"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="#212121"
+        android:layout_marginBottom="8dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtv_post_item_post"
+        android:text="TEST"
+        android:textSize="16sp" />
+    <View
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/btn_color_login"></View>
+
+</LinearLayout>
